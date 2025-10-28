@@ -1,7 +1,6 @@
 .cache/
 *.pyc
 .sconsign.dblite
-.vscode/
 .mypy_cache/
 __pycache__/
 _attic/
