@@ -1,0 +1,23 @@
+- What are the assets?
+	- keys
+- What is the system’s purpose, trust boundaries, and critical assets?
+	- 
+- What code/dirs, versions, and components are in scope vs. out of scope?
+	- `embed`, maybe `src`
+- What are the explicit security requirements (confidentiality, integrity, availability, privacy, compliance)?
+	- confidentiality - nobody but the owner should have access to the wallet
+	- integrity - the keys shouldn't become unusable
+	- availability - i should always be able to use my wallet
+	- privacy - could the keys be considered private information
+	- compliance - compliance with blockchain algorithms?
+- Specify which older version you will analyze and what your plans are with respect to the old issues.
+	- version 2.0.5 - release version of Model T
+- What is the high-level architecture and data-/control-flow between components?
+	- Boot process: boardloader (`embed/boardloader`) -> bootloader (`embed/bootloader`) -> firmware (`embed/firmware`) -> micropython (`src/main.py`)
+	- micropython layer then communicates with the firmware layer
+- What are the attacker models (local, LAN, Internet, supply-chain, insider)?
+	- local or USB
+	- supply-chain - directly depends on `micropython`, `nanopb`
+	- insider - through open-source contributions
+- Where are privilege boundaries crossed (user- root, network - local)?
+	- unauthorized -> \[ user enters pin \] -> authorized
