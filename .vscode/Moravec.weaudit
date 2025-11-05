@@ -2,7 +2,30 @@
   "clientRemote": "",
   "gitRemote": "",
   "gitSha": "",
-  "treeEntries": [],
+  "treeEntries": [
+    {
+      "label": "Looks good",
+      "entryType": 0,
+      "author": "Moravec",
+      "details": {
+        "severity": "",
+        "difficulty": "",
+        "type": "",
+        "description": "",
+        "exploit": "",
+        "recommendation": "Short term, \nLong term, \n"
+      },
+      "locations": [
+        {
+          "path": "README.md",
+          "startLine": 15,
+          "endLine": 20,
+          "label": "",
+          "description": ""
+        }
+      ]
+    }
+  ],
   "auditedFiles": [
     {
       "path": "README.md",
