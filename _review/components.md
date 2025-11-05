@@ -6,3 +6,6 @@
 
 # `embed/prodtest`
 - small special firmware for testing the hardware itself
+
+# `embed/extmod`
+- low-level code for Python functions
