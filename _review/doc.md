@@ -18,7 +18,7 @@
 	- micropython layer then communicates with the firmware layer
 - What are the attacker models (local, LAN, Internet, supply-chain, insider)?
 	- local or USB
-	- supply-chain - directly depends on `micropython`, `nanopb`
+	- supply-chain - hardware during manufacturing/delivery, software directly depends on `micropython`, `nanopb`
 	- insider - through open-source contributions
 - Where are privilege boundaries crossed (user- root, network - local)?
 	- unauthorized -> \[ user enters pin \] -> authorized
