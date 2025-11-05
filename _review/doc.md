@@ -1,7 +1,8 @@
 - What are the assets?
 	- keys
 - What is the system’s purpose, trust boundaries, and critical assets?
-	- 
+	- signing blockchain transactions
+	- unauthorized user -> authorized user
 - What code/dirs, versions, and components are in scope vs. out of scope?
 	- `embed`, maybe `src`
 - What are the explicit security requirements (confidentiality, integrity, availability, privacy, compliance)?
