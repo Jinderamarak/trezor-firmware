@@ -26,7 +26,16 @@
       ]
     }
   ],
-  "auditedFiles": [],
+  "auditedFiles": [
+    {
+      "path": "embed\\extmod\\modtrezorconfig\\norcow.c",
+      "author": "Michal"
+    },
+    {
+      "path": "embed\\extmod\\modtrezorconfig\\norcow.h",
+      "author": "Michal"
+    }
+  ],
   "partiallyAuditedFiles": [],
   "resolvedEntries": []
 }

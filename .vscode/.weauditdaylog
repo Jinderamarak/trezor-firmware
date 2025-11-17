@@ -10,5 +10,12 @@
     [
       "README.md"
     ]
+  ],
+  [
+    "Mon Nov 17 2025",
+    [
+      "embed\\extmod\\modtrezorconfig\\norcow.c",
+      "embed\\extmod\\modtrezorconfig\\norcow.h"
+    ]
   ]
 ]
