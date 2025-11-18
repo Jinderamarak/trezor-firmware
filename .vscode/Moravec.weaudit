@@ -24,6 +24,79 @@
           "description": ""
         }
       ]
+    },
+    {
+      "label": "Confusing default pin",
+      "entryType": 0,
+      "author": "Moravec",
+      "details": {
+        "severity": "",
+        "difficulty": "",
+        "type": "",
+        "description": "",
+        "exploit": "",
+        "recommendation": ""
+      },
+      "locations": [
+        {
+          "path": "embed\\extmod\\modtrezorconfig\\storage.c",
+          "startLine": 90,
+          "endLine": 90,
+          "label": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "label": "Mixing different integer sizes",
+      "entryType": 0,
+      "author": "Moravec",
+      "details": {
+        "severity": "",
+        "difficulty": "",
+        "type": "",
+        "description": "",
+        "exploit": "",
+        "recommendation": ""
+      },
+      "locations": [
+        {
+          "path": "embed\\extmod\\modtrezorconfig\\storage.c",
+          "startLine": 172,
+          "endLine": 172,
+          "label": "",
+          "description": ""
+        },
+        {
+          "path": "embed\\extmod\\modtrezorconfig\\storage.c",
+          "startLine": 181,
+          "endLine": 181,
+          "label": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "label": "Incorrect memcmp length",
+      "entryType": 0,
+      "author": "Moravec",
+      "details": {
+        "severity": "",
+        "difficulty": "",
+        "type": "",
+        "description": "Comparing 4 bytes checks only the `TOI` magic, and `f` flag (full-color big endian), but doesn't check the dimensions of the image (bytes 5-6 for width, and 7-8 for height)",
+        "exploit": "",
+        "recommendation": "Compare all 8 bytes"
+      },
+      "locations": [
+        {
+          "path": "embed\\bootloader\\bootui.c",
+          "startLine": 90,
+          "endLine": 90,
+          "label": "",
+          "description": ""
+        }
+      ]
     }
   ],
   "auditedFiles": [
