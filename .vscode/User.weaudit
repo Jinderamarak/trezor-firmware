@@ -1,0 +1,32 @@
+{
+  "clientRemote": "",
+  "gitRemote": "",
+  "gitSha": "",
+  "treeEntries": [
+    {
+      "label": "Passed pointer to memory that could be free by garbage collector",
+      "entryType": 0,
+      "author": "User",
+      "details": {
+        "severity": "Informational",
+        "difficulty": "Undetermined",
+        "type": "Data Exposure",
+        "description": "Report_desc in not copied, only pointer to micropython memory is transfered. Could be dangerous but as of now  not a problem -> The buffer is declared in main.py and thus not freed by the garbage collector (propably).",
+        "exploit": "-",
+        "recommendation": "-"
+      },
+      "locations": [
+        {
+          "path": "embed\\extmod\\modtrezorio\\modtrezorio-hid.h",
+          "startLine": 79,
+          "endLine": 79,
+          "label": "",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "auditedFiles": [],
+  "partiallyAuditedFiles": [],
+  "resolvedEntries": []
+}
