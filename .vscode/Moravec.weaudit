@@ -84,14 +84,14 @@
         "severity": "",
         "difficulty": "",
         "type": "",
-        "description": "Comparing 4 bytes checks only the `TOI` magic, and `f` flag (full-color big endian), but doesn't check the dimensions of the image (bytes 5-6 for width, and 7-8 for height)",
+        "description": "Comparing 4 bytes checks only the `TOI` magic, and `f` flag (full-color big endian), but doesn't check the dimensions of the image (bytes 5-6 for width, and 7-8 for height).\nIntegrity of the vendor image is checked before calling.",
         "exploit": "",
         "recommendation": "Compare all 8 bytes"
       },
       "locations": [
         {
           "path": "embed\\bootloader\\bootui.c",
-          "startLine": 90,
+          "startLine": 89,
           "endLine": 90,
           "label": "",
           "description": ""
