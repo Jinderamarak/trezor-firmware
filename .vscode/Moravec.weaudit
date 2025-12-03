@@ -97,6 +97,50 @@
           "description": ""
         }
       ]
+    },
+    {
+      "label": "Possible fault injection for vendor header validation",
+      "entryType": 0,
+      "author": "Moravec",
+      "details": {
+        "severity": "",
+        "difficulty": "",
+        "type": "",
+        "description": "",
+        "exploit": "",
+        "recommendation": "Short term, \nLong term, \n"
+      },
+      "locations": [
+        {
+          "path": "embed\\trezorhal\\image.c",
+          "startLine": 148,
+          "endLine": 148,
+          "label": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "label": "Possible fault injection on bootloader validation with single check",
+      "entryType": 0,
+      "author": "Moravec",
+      "details": {
+        "severity": "",
+        "difficulty": "",
+        "type": "",
+        "description": "",
+        "exploit": "",
+        "recommendation": "Short term, \nLong term, \n"
+      },
+      "locations": [
+        {
+          "path": "embed\\boardloader\\main.c",
+          "startLine": 191,
+          "endLine": 193,
+          "label": "",
+          "description": ""
+        }
+      ]
     }
   ],
   "auditedFiles": [
