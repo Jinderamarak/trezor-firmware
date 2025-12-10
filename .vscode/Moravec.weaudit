@@ -30,10 +30,10 @@
       "entryType": 0,
       "author": "Moravec",
       "details": {
-        "severity": "",
-        "difficulty": "",
+        "severity": "Informational",
+        "difficulty": "N/A",
         "type": "",
-        "description": "",
+        "description": "If a pin is not initialized, number \"1\" is accepted.",
         "exploit": "",
         "recommendation": ""
       },
@@ -52,12 +52,12 @@
       "entryType": 0,
       "author": "Moravec",
       "details": {
-        "severity": "",
-        "difficulty": "",
-        "type": "",
-        "description": "",
+        "severity": "Informational",
+        "difficulty": "N/A",
+        "type": "Undefined Behavior",
+        "description": "uint32_t is passed to a uint16_t parameter",
         "exploit": "",
-        "recommendation": ""
+        "recommendation": "Check if the conversion is valid"
       },
       "locations": [
         {
@@ -81,8 +81,8 @@
       "entryType": 0,
       "author": "Moravec",
       "details": {
-        "severity": "",
-        "difficulty": "",
+        "severity": "Informational",
+        "difficulty": "N/A",
         "type": "",
         "description": "Comparing 4 bytes checks only the `TOI` magic, and `f` flag (full-color big endian), but doesn't check the dimensions of the image (bytes 5-6 for width, and 7-8 for height).\nIntegrity of the vendor image is checked before calling.",
         "exploit": "",
@@ -103,12 +103,12 @@
       "entryType": 0,
       "author": "Moravec",
       "details": {
-        "severity": "",
-        "difficulty": "",
+        "severity": "Medium",
+        "difficulty": "High",
         "type": "",
-        "description": "",
-        "exploit": "",
-        "recommendation": "Short term, \nLong term, \n"
+        "description": "Firmware signature is checked only once and susceptible to glitching.",
+        "exploit": "Custom firmware could be uploaded.",
+        "recommendation": "Check the header multiple times."
       },
       "locations": [
         {
@@ -125,12 +125,12 @@
       "entryType": 0,
       "author": "Moravec",
       "details": {
-        "severity": "",
-        "difficulty": "",
+        "severity": "Medium",
+        "difficulty": "High",
         "type": "",
-        "description": "",
-        "exploit": "",
-        "recommendation": "Short term, \nLong term, \n"
+        "description": "Bootloader image is verified only once, therefore susceptible to glitching.",
+        "exploit": "Custom bootloader can be loaded.",
+        "recommendation": "Check the image mutliple times."
       },
       "locations": [
         {
